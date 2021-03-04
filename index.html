@@ -48,28 +48,31 @@
     <h1 class="contenitore" id="vincitore"></h1>
 
     <script>
+
       var min = 1;
       var max = 6;
       var player = Math.floor(Math.random() * max) + min;
       var computer = Math.floor(Math.random() * max) + min;
+      var winer = document.getElementById('vincitore')
+      var message = 'Vincitore: Player'
 
       document.getElementById('player').innerHTML = 'Player: ' + player;
       document.getElementById('computer').innerHTML = 'Computer: ' + computer;
-      document.getElementById('vincitore').innerHTML = 'Vincitore: ';
-
 
       if (player > computer) {
-        document.getElementById('vincitore').innerHTML = 'Vincitore: player';
+        message;
         console.log(player, computer, ('Vincitore: Player'))
       }
       else if (player < computer) {
-        document.getElementById('vincitore').innerHTML = 'Vincitore: computer';
+        message = ('Vincitore: Computer');
         console.log(player, computer, ('Vincitore: Computer'))
       }
       else if (player = computer) {
-        document.getElementById('vincitore').innerHTML = 'Pareggio';
+        message = ('Pareggio');
         console.log(player, computer, ('Pareggio'))
       }
+
+      winer.innerHTML = message;
 
     </script> -->
 
