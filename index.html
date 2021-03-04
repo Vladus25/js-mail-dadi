@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1 id="result"></h1>
+
+    <script>
+
+      var email = prompt('Inserisci la tua email:')
+      var arr = [ 'franco@gmail.com', 'marco@gmail.com', 'lorenzo@gmail.com', 'allesandro@gmail.com', 'nunzio@gmail.com', 'vlad@gmail.com' ];
+      var message = 'La vostra email risulta nella nostra database, potete entrare nel vostro account.'
+      var result = document.getElementById('result')
+
+      for (var i = 0; i < arr.length;i++) {
+          if (arr[i] == email) {
+            message;
+            console.log(i, arr[i],);
+            i = arr.length;
+          }
+          else if( i == (arr.length -1)) {
+            message = 'Siamo spiacenti, la vosta email non risulta nella nostra database, acesso negato.';
+            console.log(i, arr[i],);
+          }
+
+      }
+      result.innerHTML = message;
+
+    </script>
+    
+  </body>
+</html>
