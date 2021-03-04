@@ -2,11 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Esercitzione JV</title>
+    <style>
+      body{
+        background-color: rgb(218, 114, 114);
+      }
+      .contenitore{
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
 
-    <h1 id="result"></h1>
+    <!-- Primo esercizio -->
+
+    <!-- <h1 class="contenitore" id="result"></h1>
 
     <script>
 
@@ -29,7 +39,37 @@
       }
       result.innerHTML = message;
 
+    </script> -->
+
+    <!-- Secondo esercizio -->
+
+    <h1 class="contenitore" id="player"></h1>
+    <h1 class="contenitore" id="computer"></h1>
+    <h1 class="contenitore" id="vincitore"></h1>
+
+    <script>
+      var min = 1;
+      var max = 6;
+      var player = Math.floor(Math.random() * max) + min;
+      var computer = Math.floor(Math.random() * max) + min;
+
+      document.getElementById('player').innerHTML = 'player: ' + player;
+      document.getElementById('computer').innerHTML = 'computer: ' + computer;
+      document.getElementById('vincitore').innerHTML = 'vincitore: ';
+
+
+      if (player > computer) {
+        document.getElementById('vincitore').innerHTML = 'vincitore: player';
+      }
+      else if (player < computer) {
+        document.getElementById('vincitore').innerHTML = 'vincitore: computer';
+      }
+      else if (player = computer) {
+        document.getElementById('vincitore').innerHTML = 'Pareggio';
+      }
+
+
     </script>
-    
+
   </body>
 </html>
