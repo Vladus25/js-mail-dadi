@@ -16,7 +16,7 @@
 
     <!-- Primo esercizio -->
 
-    <!-- <h1 class="contenitore" id="result"></h1>
+    <h1 class="contenitore" id="result"></h1>
 
     <script>
 
@@ -28,22 +28,22 @@
       for (var i = 0; i < arr.length;i++) {
           if (arr[i] == email) {
             message;
-            console.log(i, arr[i],);
+            console.log(i, email, ('Email Giusta'));
             i = arr.length;
           }
           else if( i == (arr.length -1)) {
             message = 'Siamo spiacenti, la vosta email non risulta nella nostra database, acesso negato.';
-            console.log(i, arr[i],);
+            console.log(i, email,('Email Sbagliata'));
           }
 
       }
       result.innerHTML = message;
 
-    </script> -->
+    </script>
 
     <!-- Secondo esercizio -->
 
-    <h1 class="contenitore" id="player"></h1>
+    <!-- <h1 class="contenitore" id="player"></h1>
     <h1 class="contenitore" id="computer"></h1>
     <h1 class="contenitore" id="vincitore"></h1>
 
@@ -53,23 +53,25 @@
       var player = Math.floor(Math.random() * max) + min;
       var computer = Math.floor(Math.random() * max) + min;
 
-      document.getElementById('player').innerHTML = 'player: ' + player;
-      document.getElementById('computer').innerHTML = 'computer: ' + computer;
-      document.getElementById('vincitore').innerHTML = 'vincitore: ';
+      document.getElementById('player').innerHTML = 'Player: ' + player;
+      document.getElementById('computer').innerHTML = 'Computer: ' + computer;
+      document.getElementById('vincitore').innerHTML = 'Vincitore: ';
 
 
       if (player > computer) {
-        document.getElementById('vincitore').innerHTML = 'vincitore: player';
+        document.getElementById('vincitore').innerHTML = 'Vincitore: player';
+        console.log(player, computer, ('Vincitore: Player'))
       }
       else if (player < computer) {
-        document.getElementById('vincitore').innerHTML = 'vincitore: computer';
+        document.getElementById('vincitore').innerHTML = 'Vincitore: computer';
+        console.log(player, computer, ('Vincitore: Computer'))
       }
       else if (player = computer) {
         document.getElementById('vincitore').innerHTML = 'Pareggio';
+        console.log(player, computer, ('Pareggio'))
       }
 
-
-    </script>
+    </script> -->
 
   </body>
 </html>
