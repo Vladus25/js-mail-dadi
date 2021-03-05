@@ -25,18 +25,24 @@
       var message = 'La vostra email risulta nella nostra database, potete entrare nel vostro account.'
       var result = document.getElementById('result')
 
+      var finded = false
       for (var i = 0; i < arr.length;i++) {
+
           if (arr[i] == email) {
-            message;
-            console.log(i, email, ('Email Giusta'));
-            i = arr.length;
-          }
-          else if( i == (arr.length -1)) {
-            message = 'Siamo spiacenti, la vosta email non risulta nella nostra database, acesso negato.';
-            console.log(i, email,('Email Sbagliata'));
+            finded = true;
           }
 
       }
+
+        if (finded) {
+          message;
+          console.log(i, email, ('Email Giusta'));
+        }
+        else {
+          message = 'Siamo spiacenti, la vosta email non risulta nella nostra database, acesso negato.';
+          console.log(i, email,('Email Sbagliata'));
+        }
+
       result.innerHTML = message;
 
     </script>
